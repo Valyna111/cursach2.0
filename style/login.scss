@@ -1,0 +1,253 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "sidebar content1 content2 content3"
+      "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fafffe;
+    text-align: center;
+  }
+  
+  nav {
+    background: rgb(146, 60, 237);
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  main {
+    background: #855ead7e;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #sidebar {
+    background: rgb(146, 60, 237);
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content1 {
+      color: whitesmoke;
+    background: #9580cfab;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content2 {
+    color: whitesmoke;
+    background: #9580cfab;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content3 {
+    background:rgb(146, 60, 237) ;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  footer {
+    background: #3d1b66;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+  }
+  
+
+
+
+
+.login {
+    margin: 20px auto;
+    width: 300px;
+  }
+  .login-screen {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    @media screen and (max-width:1200px) {
+  
+        width: initial;
+  
+  
+  }
+  }
+  .app-title {
+    text-align: center;
+    color: #777;
+    @media screen and (max-width:1200px) {
+      width: initial;
+  }
+  }
+  
+  .login-form {
+    text-align: center;
+    @media screen and (max-width:1200px) {
+  
+      width: initial;
+  
+  
+  }
+  }
+  .control-group {
+    margin-bottom: 10px;
+     @media screen and (max-width:1200px) {
+      width: initial;
+  }
+    
+  }
+  
+  input {
+    text-align: center;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border 0.5s;
+  }
+  
+  input:focus {
+    border: 2px solid #33195f;
+    box-shadow: none;
+  }
+  
+  .btn {
+    border: 2px solid transparent;
+    background: #632c9b;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .btn:hover {
+    background-color: #33195f;
+  }
+  
+  .login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+  }
+  
+  .bodylogin {
+    background-color: rgb(146, 60, 237);
+  }
+
+  .navbar {
+    display: grid; 
+    min-height: 100px;
+    grid-auto-flow: column;
+    background-color: #d2acf4;
+    grid-gap: 20px;
+    padding: 0px 30px 0px 30px; 
+    
+}
+
+.logo {
+    display: grid; 
+    justify-content: start; 
+    align-content: center; 
+    font-size: 25px;
+    color:whitesmoke;
+}
+
+.links {
+    display: grid; 
+    justify-content: end; 
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-size: 20px;
+}
+
+.containerfooter:after,
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.conteinerfooter {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 15px;
+}
+footer {
+  padding: 30px 0;
+  background: #3d1b66;
+  color: white;
+}
+.footer-col {
+  width: 33.3333333333%;
+  float: left;
+}
+.footer-col a {
+  color: white;
+}
+.footer-col:last-child {
+  text-align: right;
+}
+
+.svgf {
+  display: inline;
+}
